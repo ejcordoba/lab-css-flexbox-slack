@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
+    width: 100%;
     margin: 0;
     padding: 20px;
     background-color: #540b51;
@@ -104,7 +104,7 @@
     background-color: #540b51;
     color: #fff;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
   }
   .sign-up h1 {
@@ -112,6 +112,12 @@
     text-align: left;
     padding: 0 25px;
     margin-left: 15px;
+  }
+  .sign-up p {
+    margin-left: 5%;
+    font-size: 1.3rem;
+    text-align: left;
+    width: 50%;
   }
   .sign-up-mail {
     background-color: white;
@@ -148,8 +154,9 @@
     background-color: #540b51;
   }
   .hero-product {
-    width: 200%;
-    margin-bottom: 65%;
+    width: 120%;
+    position: relative;
+    bottom: 20%;
   }
   /**/
   .trusted {
@@ -200,6 +207,10 @@
   }
 
   /**/
+  .connectedness {
+    display: flex;
+    align-items: center;
+  }
   .speed-move {
     background-color: #f3eae2;
   }
@@ -232,8 +243,9 @@
   .choose-work,
   .move-faster {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background-color: #f3eae2;
+    align-items: center;
   }
   .choose-work {
     justify-content: flex-end;
@@ -244,10 +256,14 @@
     padding-top: 15px;
   }
   .choose-work-wrapper {
-    order: 2;
+    order: 1;
   }
   .flexibility-wrapper {
-    order: 1;
+    order: 2;
+  }
+  .speed-move {
+    display: flex;
+    align-items: center;
   }
   .bring-your-team,
   .flexibility-wrapper,
@@ -316,12 +332,12 @@
     margin: 5px;
   }
   .meet-slack {
-    width: 60%;
+    width: 40%;
     background-color: #540b51;
     color: #fff;
   }
   .talk-to-sales {
-    width: 40%;
+    width: 30%;
     color: #540b51;
     border: 1px solid #540b51;
   }
@@ -348,9 +364,10 @@
   .welcome-digital {
     display: flex;
     width: 100%;
-    height: 400px;
-    flex-direction: column;
+    height: 245px;
+    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     background-color: #540b51;
     color: white;
@@ -358,7 +375,9 @@
   }
   .welcome-digital h3 {
     text-align: center;
+    margin: 0 auto;
     padding: 0 50px;
+    width: 100%;
     font-size: 2.3rem;
   }
   .to-sales {
@@ -373,14 +392,16 @@
   }
   .to-sales,
   .for-free {
-    width: 80%;
-    margin: 15px auto;
+    position: relative;
+    bottom: 20%;
+    width: 20%;
+    margin: 0 15px;
   }
   footer img {
     position: relative;
     width: 60px;
-    top: 30px;
-    left: 8%;
+    top: 90px;
+    left: 6%;
   }
   footer hr {
     display: none;
@@ -392,7 +413,7 @@
     order: 1;
     font-size: 0.7rem;
     justify-content: space-between;
-    margin: 10% 5% 5% 5%;
+    margin: 10% 5% 3% 5%;
     border-bottom: 1px solid grey;
   }
   .footer-menu ul {
@@ -417,7 +438,7 @@
     font-size: 0.7rem;
     line-height: 40px;
     font-weight: bolder;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 
   .change-region::before {
@@ -453,7 +474,7 @@
     padding-left: 0;
     text-align: center;
     margin: 15px;
-    padding-left: 20px;
+    padding-left: 25px;
   }
   .social-icons li {
     margin-left: 10px;
@@ -465,7 +486,7 @@
   .copyright {
     font-size: 0.9rem;
     font-weight: 100;
-    padding: 20px 40px;
+    padding: 20px 50px;
     text-align: left;
   }
 }
